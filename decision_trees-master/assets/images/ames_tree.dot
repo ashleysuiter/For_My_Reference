@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="OverallQual <= 7.5\nmse = 6544000097.705\nsamples = 1095\nvalue = 180999.385"] ;
+1 [label="OverallQual <= 6.5\nmse = 2449860430.067\nsamples = 927\nvalue = 157829.065"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="GrLivArea <= 1413.0\nmse = 1435199410.855\nsamples = 691\nvalue = 140779.022"] ;
+1 -> 2 ;
+3 [label="mse = 869754219.029\nsamples = 444\nvalue = 125970.989"] ;
+2 -> 3 ;
+4 [label="mse = 1348915825.618\nsamples = 247\nvalue = 167397.51"] ;
+2 -> 4 ;
+5 [label="GrLivArea <= 1730.5\nmse = 2077381247.538\nsamples = 236\nvalue = 207751.013"] ;
+1 -> 5 ;
+6 [label="mse = 1119386487.754\nsamples = 146\nvalue = 188302.836"] ;
+5 -> 6 ;
+7 [label="mse = 2022529815.201\nsamples = 90\nvalue = 239300.278"] ;
+5 -> 7 ;
+8 [label="2ndFlrSF <= 1563.5\nmse = 9826785071.646\nsamples = 168\nvalue = 308849.905"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="OverallQual <= 8.5\nmse = 6687410607.182\nsamples = 164\nvalue = 300145.024"] ;
+8 -> 9 ;
+10 [label="mse = 4009574148.04\nsamples = 119\nvalue = 273550.294"] ;
+9 -> 10 ;
+11 [label="mse = 6952370625.725\nsamples = 45\nvalue = 370473.311"] ;
+9 -> 11 ;
+12 [label="LotArea <= 28647.5\nmse = 8056687500.0\nsamples = 4\nvalue = 665750.0"] ;
+8 -> 12 ;
+13 [label="mse = 25000000.0\nsamples = 2\nvalue = 750000.0"] ;
+12 -> 13 ;
+14 [label="mse = 1892250000.0\nsamples = 2\nvalue = 581500.0"] ;
+12 -> 14 ;
+}
